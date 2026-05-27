@@ -32,3 +32,12 @@ target_link_libraries(llm_smoke_test
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Network
 )
+
+add_executable(runtime_config_smoke_test
+    runtime_config_smoke_test.cpp
+)
+
+target_link_libraries(runtime_config_smoke_test
+    llm_foundation
+    Qt${QT_VERSION_MAJOR}::Core
+)

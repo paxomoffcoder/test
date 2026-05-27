@@ -1,6 +1,8 @@
 #ifndef LLM_CONFIG_H
 #define LLM_CONFIG_H
 
+#include <QObject>
+#include <QMutex>
 #include <QString>
 
 struct LlmConfig {
@@ -14,14 +16,20 @@ struct LlmConfig {
     qint64 llm_sender_id = 0;
 };
 
-class LlmConfigManager {
+class LlmConfigManager : public QObject {
+    Q_OBJECT
 public:
-    LlmConfigManager();
+    explicit LlmConfigManager(QObject *parent = nullptr);
 
-    const LlmConfig &current() const;
-    bool validate(const LlmConfig &cfg) const;
+    LlmConfig current() const;
+    bool validate(const LlmConfig &cfg, QString *error = nullptr) const;
+    bool apply(const LlmConfig &newConfig, QString *error = nullptr);
+
+signals:
+    void configChanged(const LlmConfig &newConfig);
 
 private:
+    mutable QMutex mutex_;
     LlmConfig current_;
 };
 
