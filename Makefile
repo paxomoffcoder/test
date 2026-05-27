@@ -1,11 +1,17 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
+.PHONY: all configure build run clean
 
-main: main.c
-	$(CC) $(CFLAGS) main.c -o main
+BUILD_DIR ?= build
 
-run: main
-	./main
+all: build
+
+configure:
+	cmake -S . -B $(BUILD_DIR)
+
+build: configure
+	cmake --build $(BUILD_DIR)
+
+run: build
+	./$(BUILD_DIR)/main
 
 clean:
-	rm -f main
+	rm -rf $(BUILD_DIR)
