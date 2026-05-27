@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "llm_module",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_config_panel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_config_panel-Debug-3e030a9649b9809d6c18.json",
+					"name" : "llm_config_panel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_config_panel_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_config_panel_autogen-Debug-99c69d5ebd68748f778a.json",
+					"name" : "llm_config_panel_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_config_panel_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_config_panel_autogen_timestamp_deps-Debug-d91183180111c1cc69b6.json",
+					"name" : "llm_config_panel_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_foundation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_foundation-Debug-95037da9b5726e9c88ac.json",
+					"name" : "llm_foundation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_foundation_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_foundation_autogen-Debug-6202fb4ac89b837b270d.json",
+					"name" : "llm_foundation_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_foundation_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_foundation_autogen_timestamp_deps-Debug-a0b5293f586b6865b7d7.json",
+					"name" : "llm_foundation_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_smoke_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_smoke_test-Debug-b225de674fe6868bd8ee.json",
+					"name" : "llm_smoke_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_smoke_test_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_smoke_test_autogen-Debug-a4ef76b4c81f72515c66.json",
+					"name" : "llm_smoke_test_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llm_smoke_test_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llm_smoke_test_autogen_timestamp_deps-Debug-ac690307209e3cf24241.json",
+					"name" : "llm_smoke_test_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runtime_config_smoke_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runtime_config_smoke_test-Debug-66dda9c26229ac1ec75a.json",
+					"name" : "runtime_config_smoke_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runtime_config_smoke_test_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runtime_config_smoke_test_autogen-Debug-3575d8ad8862103bc2e3.json",
+					"name" : "runtime_config_smoke_test_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runtime_config_smoke_test_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runtime_config_smoke_test_autogen_timestamp_deps-Debug-8944117ff73986ae2697.json",
+					"name" : "runtime_config_smoke_test_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/soul_goodman/ITProjects/reptest/LLM_module/build/Desktop-Debug",
+		"source" : "/home/soul_goodman/ITProjects/reptest/LLM_module"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

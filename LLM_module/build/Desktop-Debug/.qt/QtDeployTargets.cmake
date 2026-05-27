@@ -1,0 +1,8 @@
+set(__QT_DEPLOY_TARGET_llm_foundation_FILE /home/soul_goodman/ITProjects/reptest/LLM_module/build/Desktop-Debug/libllm_foundation.a)
+set(__QT_DEPLOY_TARGET_llm_foundation_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_llm_smoke_test_FILE /home/soul_goodman/ITProjects/reptest/LLM_module/build/Desktop-Debug/llm_smoke_test)
+set(__QT_DEPLOY_TARGET_llm_smoke_test_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_llm_config_panel_FILE /home/soul_goodman/ITProjects/reptest/LLM_module/build/Desktop-Debug/llm_config_panel)
+set(__QT_DEPLOY_TARGET_llm_config_panel_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_runtime_config_smoke_test_FILE /home/soul_goodman/ITProjects/reptest/LLM_module/build/Desktop-Debug/runtime_config_smoke_test)
+set(__QT_DEPLOY_TARGET_runtime_config_smoke_test_TYPE EXECUTABLE)

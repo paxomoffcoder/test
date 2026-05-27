@@ -1,0 +1,2 @@
+/usr/bin/ar qc libllm_foundation.a CMakeFiles/llm_foundation.dir/llm_foundation_autogen/mocs_compilation.cpp.o CMakeFiles/llm_foundation.dir/llm_config.cpp.o CMakeFiles/llm_foundation.dir/ollama_provider.cpp.o CMakeFiles/llm_foundation.dir/context_builder.cpp.o CMakeFiles/llm_foundation.dir/llm_service.cpp.o
+/usr/bin/ranlib libllm_foundation.a
