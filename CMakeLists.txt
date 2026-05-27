@@ -5,13 +5,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Network Sql)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Network Sql)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Network Sql Concurrent)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Network Sql Concurrent)
 
 add_library(llm_foundation STATIC
     llm_config.cpp
     ollama_provider.cpp
     context_builder.cpp
+    llm_service.cpp
 )
 
 target_include_directories(llm_foundation PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
@@ -19,6 +20,7 @@ target_link_libraries(llm_foundation PUBLIC
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Network
     Qt${QT_VERSION_MAJOR}::Sql
+    Qt${QT_VERSION_MAJOR}::Concurrent
 )
 
 add_executable(llm_smoke_test
