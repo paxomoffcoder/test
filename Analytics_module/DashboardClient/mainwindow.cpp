@@ -74,7 +74,7 @@ void MainWindow::setupUi()
     m_tableView->setModel(m_tableModel);
     m_tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
-    m_chartView = new QtCharts::QChartView(new QtCharts::QChart(), this);
+    m_chartView = new QChartView(new QChart(), this);
     m_chartView->setRenderHint(QPainter::Antialiasing);
 
     QSplitter* splitter = new QSplitter(Qt::Horizontal, this);
@@ -158,9 +158,9 @@ void MainWindow::renderArrayPayload(const QJsonArray& array)
 {
     m_tableModel->setRows(array, {"Bucket", "Count"}, {"bucket", "count"});
 
-    auto* chart = new QtCharts::QChart();
-    auto* series = new QtCharts::QBarSeries(chart);
-    auto* set = new QtCharts::QBarSet("count", series);
+    auto* chart = new QChart();
+    auto* series = new QBarSeries(chart);
+    auto* set = new QBarSet("count", series);
 
     for (const QJsonValue& value : array)
     {
@@ -189,9 +189,9 @@ void MainWindow::renderObjectPayload(const QJsonObject& object)
 
     m_tableModel->setRows(rows, {"Metric", "Value"}, {"metric", "value"});
 
-    auto* chart = new QtCharts::QChart();
-    auto* series = new QtCharts::QBarSeries(chart);
-    auto* set = new QtCharts::QBarSet("value", series);
+    auto* chart = new QChart();
+    auto* series = new QBarSeries(chart);
+    auto* set = new QBarSet("value", series);
 
     for (const QJsonValue& value : rows)
     {

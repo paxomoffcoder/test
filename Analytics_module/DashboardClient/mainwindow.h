@@ -12,7 +12,7 @@ class QComboBox;
 class QPushButton;
 class QLabel;
 class QTableView;
-namespace QtCharts { class QChartView; }
+class QChartView;
 class JsonTableModel;
 
 class MainWindow : public QMainWindow
@@ -44,7 +44,7 @@ private:
     QPushButton* m_refreshButton;
     QLabel* m_statusLabel;
     QTableView* m_tableView;
-    QtCharts::QChartView* m_chartView;
+    QChartView* m_chartView;
 };
 
 #endif // MAINWINDOW_H
