@@ -40,13 +40,25 @@ target_link_libraries(llm_smoke_test
 )
 
 add_executable(llm_config_panel
-    config_panel_main.cpp
-    config_panel.cpp
-    config_panel.h
+    llm_config_panel_main.cpp
+    llm_config_panel.cpp
+    llm_config_panel.h
+    llm_config_api_client.cpp
+    llm_config_api_client.h
 )
 
 target_link_libraries(llm_config_panel
     llm_foundation
     Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Network
     Qt${QT_VERSION_MAJOR}::Widgets
+)
+
+add_executable(runtime_config_smoke_test
+    runtime_config_smoke_test.cpp
+)
+
+target_link_libraries(runtime_config_smoke_test
+    llm_foundation
+    Qt${QT_VERSION_MAJOR}::Core
 )
