@@ -100,12 +100,12 @@ bool LlmService::insertLlmRequest(int chatId,
     query.bindValue(QStringLiteral(":chat_id"), chatId);
     query.bindValue(QStringLiteral(":user_id"), userId);
     query.bindValue(QStringLiteral(":prompt"), prompt);
-    query.bindValue(QStringLiteral(":response"), result.ok ? result.text : QVariant(QVariant::String));
+    query.bindValue(QStringLiteral(":response"), result.ok ? QVariant(result.text) : QVariant(QString()));
     query.bindValue(QStringLiteral(":model"), result.model);
     query.bindValue(QStringLiteral(":response_ms"), result.response_ms);
     query.bindValue(QStringLiteral(":status"), result.ok ? QStringLiteral("success") : QStringLiteral("error"));
     if (result.ok) {
-        query.bindValue(QStringLiteral(":error_code"), QVariant(QVariant::String));
+        query.bindValue(QStringLiteral(":error_code"), QVariant(QString()));
     } else {
         query.bindValue(QStringLiteral(":error_code"), result.error_code);
     }
