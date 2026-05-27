@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QJsonArray>
 #include <QJsonDocument>
+#include <QJsonObject>
 
 #include "networkclient.h"
 
@@ -10,7 +12,7 @@ class QComboBox;
 class QPushButton;
 class QLabel;
 class QTableView;
-class QtCharts::QChartView;
+namespace QtCharts { class QChartView; }
 class JsonTableModel;
 
 class MainWindow : public QMainWindow
