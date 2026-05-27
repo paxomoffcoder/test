@@ -23,7 +23,7 @@ QString LlmConfigApiClient::endpointUrl() const
 
 void LlmConfigApiClient::fetchConfig()
 {
-    QNetworkRequest req(QUrl(endpointUrl()));
+    QNetworkRequest req{QUrl(endpointUrl())};
     QNetworkReply *reply = network_.get(req);
     connect(reply, &QNetworkReply::finished, this, [this, reply]() {
         reply->deleteLater();
@@ -53,7 +53,7 @@ void LlmConfigApiClient::fetchConfig()
 
 void LlmConfigApiClient::updateConfig(const LlmConfig &config)
 {
-    QNetworkRequest req(QUrl(endpointUrl()));
+    QNetworkRequest req{QUrl(endpointUrl())};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
 
     const QJsonDocument body(toJson(config));
