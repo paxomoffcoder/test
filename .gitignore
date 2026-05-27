@@ -1,1 +1,7 @@
 main
+build/
+build-*/
+.qtc_clangd/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
