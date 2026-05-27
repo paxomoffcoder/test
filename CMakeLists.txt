@@ -15,3 +15,13 @@ add_library(llm_foundation STATIC
 
 target_include_directories(llm_foundation PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(llm_foundation PUBLIC Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Network)
+
+add_executable(llm_smoke_test
+    smoke_test.cpp
+)
+
+target_link_libraries(llm_smoke_test
+    llm_foundation
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Network
+)
